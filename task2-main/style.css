@@ -1,5 +1,6 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -10,45 +11,78 @@ body {
 
 #header {
     width: auto;
-    height: 50%;
-    padding: 100px;
+    height: 30%;
+    padding: 20px;
     text-align: center;
     background-color: white;
+    font-family: 'Bitter', serif;
+    font-size: 45px;
+
+
 }
 
 #intro {
     width: auto;
     height: 50%;
-    padding: 200px;
-    text-align: center;
+    padding: 100px;
     background-color: rgb(207, 238, 235);
+    
+}
+h2{
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-align: left;
+
 }
 
-.column{
-    margin-left: auto;
+
+#container {
     display: flex;
-    flex-direction: column; 
-    padding: 100px;
-    min-width: 25%;
-    column-count: 3;
+    flex-direction: row;
+
 }
-.flex-image{
-    display: block;
-    flex-wrap: wrap;
-    max-width: 50%;
+
+.column {
+
+    /* padding: 25px; */
+    max-width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    flex: 33%;
+
 }
-#col1{
-    
+
+.flex-image {
+    width: 100%;
+
 }
-#col2{
-    
+
+.flex-image:hover {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-#col3{
-    
-}
-#footer{
-    background-color: rgb(22, 222, 236);
+
+#col1 {}
+
+#col2 {}
+
+#col3 {}
+
+#footer {
+    background-color: rgb(132, 233, 240);
+    font-family: 'Bitter', serif;
+    font-size: 30px;
     text-align: center;
+  
 }
 
 /* optimised for tablet */
@@ -69,7 +103,12 @@ body {
         font-size: 1.5rem;
     }
 
-    #intro {
-        flex-direction: row;
+    #container {
+        flex-direction: column;
+    }
+
+    .column {
+        max-width: 100%;
+        flex: 100%;
     }
 }
