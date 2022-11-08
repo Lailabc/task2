@@ -68,7 +68,7 @@ p{
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.02);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
