@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    height: min-content;
+}
+
+#header {
+    width: auto;
+    height: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Bitter', serif;
+    font-size: 45px;
+
+
+}
+
+#intro {
+    width: auto;
+    height: 50%;
+    padding: 100px;
+    background-color: rgb(207, 238, 235);
+    
+}
+h2{
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-align: left;
+
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column {
+
+    /* padding: 25px; */
+    max-width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    flex: 33%;
+
+}
+
+.flex-image {
+    width: 100%;
+    transition: all 0.4s; 
+
+}
+
+.flex-image:hover {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transform: scale(1.02);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#col1 {}
+
+#col2 {}
+
+#col3 {}
+
+#footer {
+    background-color: rgb(132, 233, 240);
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-align: center;
+  
+}
+
+/* optimised for tablet */
+@media screen and (max-width:900px) {
+    .column {
+        min-width: 50%;
+    }
+
+}
+
+/* optimised for mobile */
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    .column {
+        max-width: 100%;
+        flex: 100%;
+    }
+}
